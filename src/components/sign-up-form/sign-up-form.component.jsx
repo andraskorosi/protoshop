@@ -4,6 +4,7 @@ import {
   createUserDocumentFromAuth
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "../form-input/form-input.component";
+import Button from "../button/button.component";
 import './sign-up-form.styles.scss'
 
 const defaultFormFields = { //unified object for default state due to name and value overlap
@@ -82,7 +83,7 @@ const SignUpForm = () => {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <button type="submit">Sing Up</button>
+        <Button type="submit">Sign Up</Button>
       </form>
     </div>
   )
