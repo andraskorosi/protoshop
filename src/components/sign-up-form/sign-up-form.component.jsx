@@ -35,7 +35,8 @@ const SignUpForm = () => {
     }
     try {
       const { user } = await createAuthUserWithEmailAndPassword(email, password);
-      await createUserDocumentFromAuth(user, { displayName });
+
+      await createUserDocumentFromAuth(user, { displayName }); //saves user to firebase db
       resetFormFields();
 
     } catch(error) {
