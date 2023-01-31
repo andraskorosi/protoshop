@@ -11,7 +11,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Navigation  />}>
         <Route index element={<Home />} /> {/* when index true displays the element on same path in the parent's Outlet */}
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop/*" element={<Shop />} /> {/* /shop/* makes nested routes available */}
         <Route path="/auth" element={<Authentication />} />
         <Route path="/checkout" element={<Checkout />} />
       </Route>
