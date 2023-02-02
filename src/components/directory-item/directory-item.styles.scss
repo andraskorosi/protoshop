@@ -16,16 +16,13 @@
       transition: opacity 400ms, transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
       opacity: 1
     }
-
     & .directory-item-body {
       opacity: 1;
     }
   }
-
   &.large {
     height: 380px;
   }
-
   &:first-child {
     width: 100%;
   }
@@ -38,7 +35,6 @@
     opacity: 0.8;
     transition-duration: 200ms;
   }
-
   .directory-item-body {
     height: 90px;
     padding: 0 25px;
@@ -58,10 +54,31 @@
       font-size: 22px;
       color: #4a4a4a;
     }
-
     p {
       font-weight: lighter;
       font-size: 16px;
     }
+  }
+}
+
+//responsive
+@media screen and (max-width: 640px) {
+  .directory-item-container {
+    min-width: 45%;
+    height: 180px;
+
+    .directory-item-body {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  .directory-item-container {
+    min-width: 100%;
   }
 }

@@ -7,7 +7,7 @@ const Authentication = () => {
   return (
     <Fragment>
       <div style={{textAlign: 'center', color: 'red'}}>
-        <span>Signing up or signing in is disabled at this time!</span>
+        <span>Authentication services are offline</span>
       </div>
       <div className="authentication-container">
         <SignInForm />

@@ -21,21 +21,36 @@
   .price {
     width: 23%;
   }
-
   .quantity {
     display: flex;
 
     .arrow {
       cursor: pointer;
     }
-
     .value {
       margin: 0 10px;
     }
   }
-
   .remove-button {
     padding-left: 12px;
     cursor: pointer;
+  }
+}
+
+//responsive
+@media screen and (max-width: 640px) {
+  .checkout-item-container{
+    font-size: 16px;
+
+    .quantity {
+      .value {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  .checkout-item-container{
+    font-size: 14px;
   }
 }

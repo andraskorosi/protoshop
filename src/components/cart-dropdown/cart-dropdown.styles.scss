@@ -34,3 +34,15 @@
     margin-top: auto;
   }
 }
+//responsive
+@media screen and (max-width: 600px) {
+  .cart-dropdown-container {
+    top: 70px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .cart-dropdown-container {
+    top: 60px;
+  }
+}

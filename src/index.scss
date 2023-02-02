@@ -30,3 +30,16 @@ a {
 .scroll {
   overflow-y: scroll;
 }
+
+//responsive
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .content {
+    padding: 80px 0 60px;
+  }
+  .spring {
+    margin: 0 20px;
+  }
+}

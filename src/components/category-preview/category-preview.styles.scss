@@ -18,5 +18,22 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
+    row-gap: 10px;
+  }
+}
+
+//responsive
+@media screen and (max-width: 920px) {
+  .category-preview-container {
+    .preview {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  .category-preview-container {
+    .preview {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
