@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  padding: 20px 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #18212a;
 }
 
 code {
@@ -18,4 +18,15 @@ a {
 
 * { // selects every matching element (all element in this case)
   box-sizing: border-box; // padding and borders won't add to an elements predetermined dimensions
+}
+
+.content {
+  padding: 120px 0 100px;
+  background-color: #fff;
+}
+.spring {
+  margin: 0 40px;
+}
+.scroll {
+  overflow-y: scroll;
 }

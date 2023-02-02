@@ -3,6 +3,12 @@ import Directory from '../../components/directory/directory.component'
 const Home = () => {
   const categories = [
     {
+      "id": 0,
+      "title": "all items",
+      "imageUrl": "https://picsum.photos/id/669/1920/240",
+      "path": "/shop"
+    },
+    {
       "id": 1,
       "title": "hats",
       "imageUrl": "https://i.ibb.co/cvpntL1/hats.png"

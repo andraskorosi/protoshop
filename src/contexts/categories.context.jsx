@@ -19,7 +19,6 @@ export const CategoriesProvider = ({ children }) => {
   useEffect(() => {
     const getCategoriesMap = async() => { //function needs to be wrapped in async if accessing db and in useEffect
       const categoryMap = await getCategoriesAndDocuments();
-      console.log(categoryMap);
       setCategoriesMap(categoryMap);
     }
 

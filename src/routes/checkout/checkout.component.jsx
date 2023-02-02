@@ -19,7 +19,7 @@ const Checkout = () => {
           <span>Quantity</span>
         </div>
         <div className='header-block'>
-          <span>Price</span>
+          <span>Unit price</span>
         </div>
         <div className='header-block'>
           <span>Remove</span>
@@ -28,7 +28,9 @@ const Checkout = () => {
       {cartItems.map((cartItem) => 
         <CheckoutItem cartItem={cartItem} key={cartItem.id} />
       )}
-      <span className='total'>Total: ${cartTotal}</span>
+      <span className='total'>
+        {cartTotal === 0 ? 'Your cart is empty' : `Total: €${cartTotal}`}
+      </span>
     </div>
   )
 }
