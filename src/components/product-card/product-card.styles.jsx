@@ -1,4 +1,6 @@
-.product-card-container {
+import styled from 'styled-components';
+
+export const ProductCardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -30,23 +32,20 @@
       display: flex;
     }
   }
-  .product-footer {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    line-height: 20px;
-  }
-}
-
-//responsive
-@media screen and (max-width: 860px) {
-  .product-card-container{
+  @media screen and (max-width: 860px) {
     height: 320px;
 
     button {
       top: 210px;
     }
   }
-}
+`
+
+export const ProductFooter = styled.div`
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 20px;
+`

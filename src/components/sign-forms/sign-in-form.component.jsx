@@ -1,11 +1,11 @@
-import { useState } from "react";
-import FormInput from "../form-input/form-input.component";
-import Button from "../button/button.component";
+import { useState } from 'react';
+import FormInput from '../form-input/form-input.component';
+import Button, {BUTTON_TYPE_CLASSES} from '../button/button.component';
 import { 
   signInWithGooglePopup,
   signInAuthUserWithEmailAndPassword
-} from "../../utils/firebase/firebase.utils";
-import './sign-in-form.styles.scss'
+} from '../../utils/firebase/firebase.utils';
+import { SignFormContainer, ButtonsContainer } from './sign-forms.styles';
 
 const defaultFormFields = {
   email: '',
@@ -51,34 +51,39 @@ const SignInForm = () => {
   }
 
   return (
-    <div className="sign-in-container">
+    <SignFormContainer>
       <h2>Already have an account?</h2>
       <span>Sign in with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
-          label="Email"
-          type="email"
+          label='Email'
+          type='email'
           required
           onChange={handleChange}
-          name="email"
+          name='email'
           value={email}
         />
         <FormInput
-          label="Password"
-          type="password" 
+          label='Password'
+          type='password' 
           required 
           onChange={handleChange} 
-          name="password"
+          name='password'
           value={password}
         />
-        <div className="buttons-container">
-          <Button type="submit" disabled>Sign In</Button>
-          <Button type="button" buttonType="google" onClick={signInWithGoogle} disabled>
+        <ButtonsContainer>
+          <Button type='submit' disabled>Sign In</Button>
+          <Button 
+            type='button' 
+            buttonType={BUTTON_TYPE_CLASSES.google} 
+            onClick={signInWithGoogle} 
+            disabled
+          >
             Google sign in
           </Button>
-        </div>
+        </ButtonsContainer>
       </form>
-    </div>
+    </SignFormContainer>
   )
 }
 export default SignInForm

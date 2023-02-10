@@ -1,18 +1,18 @@
-import { Fragment } from "react";
-import SignInForm from "../../components/sign-in-form/sign-in-form.component";
-import SignUpForm from "../../components/sign-up-form/sign-up-form.component";
-import './authentication.styles.scss'
+import { Fragment } from 'react';
+import SignInForm from '../../components/sign-forms/sign-in-form.component';
+import SignUpForm from '../../components/sign-forms/sign-up-form.component';
+import { AuthenticationContainer } from './authentication.styles';
 
 const Authentication = () => {
   return (
     <Fragment>
       <div style={{textAlign: 'center', color: 'red'}}>
-        <span>Authentication services are offline</span>
+        <span>Authentication services are disabled at this time</span>
       </div>
-      <div className="authentication-container">
+      <AuthenticationContainer>
         <SignInForm />
         <SignUpForm />
-      </div>
+      </AuthenticationContainer>
     </Fragment>
   )
 };

@@ -1,4 +1,6 @@
-.footer {
+import styled from 'styled-components';
+
+export const FooterContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,4 +12,4 @@
   font-size: 14px;
 
   a {color: #ccc; &:hover { color: #fff}}
-}
+`

@@ -1,4 +1,6 @@
-.checkout-item-container {
+import styled from 'styled-components';
+
+export const CheckoutItemContainer = styled.div`
   width: 100%;
   display: flex;
   min-height: 100px;
@@ -7,15 +9,6 @@
   font-size: 20px;
   align-items: center;
 
-  .image-container {
-    width: 23%;
-    padding-right: 15px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
   .name,
   .quantity,
   .price {
@@ -31,26 +24,31 @@
       margin: 0 10px;
     }
   }
-  .remove-button {
-    padding-left: 12px;
-    cursor: pointer;
-  }
-}
 
-//responsive
-@media screen and (max-width: 640px) {
-  .checkout-item-container{
+  @media screen and (max-width: 640px) {
     font-size: 16px;
-
     .quantity {
       .value {
         margin: 0 5px;
       }
     }
   }
-}
-@media screen and (max-width: 414px) {
-  .checkout-item-container{
+  @media screen and (max-width: 414px) {
     font-size: 14px;
   }
-}
+`
+
+export const ImageContainer = styled.div`
+  width: 23%;
+  padding-right: 15px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`
+
+export const RemoveButton = styled.div`
+  padding-left: 12px;
+  cursor: pointer;
+`
