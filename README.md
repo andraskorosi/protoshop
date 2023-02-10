@@ -6,13 +6,15 @@ A webshop prototype with React.
 
  ## Current features
   - React Hooks and Context usage
-  - custom SCSS
+  - custom Styled Components
   - Firebase data storage
   - authentication
   - checkout
 
 ## Future plans
   - Redux integration
+  - Stripe payment system
+  - user interface
   - Typescript
   - GraphQL + Apollo
   - unit + integration tests
