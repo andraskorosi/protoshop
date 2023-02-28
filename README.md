@@ -8,13 +8,18 @@ A webshop prototype with React.
   - React Hooks and Context usage
   - custom Styled Components
   - Firebase data storage
-  - authentication
-  - checkout
+  - authentication process
+  - cart and checkout functionality
 
 ## Future plans
   - Redux integration
   - Stripe payment system
-  - user interface
-  - Typescript
+  - rewrite code in Typescript
   - GraphQL + Apollo
   - unit + integration tests
+
+## Commands
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
